@@ -54,7 +54,7 @@ gulp.task('moduleCss', function () {
 	  .pipe(gulp.dest(dist.path))
 	  .pipe(livereload())
 })
-// 每次编译前先清空原来的文件
+// 每次编译前先清空原来的文件(目前的文件编译暂时不需要清空)
 gulp.task('cleanJs', function () {
     return gulp.src("./dist/js", {read: false})
            .pipe(clean())
